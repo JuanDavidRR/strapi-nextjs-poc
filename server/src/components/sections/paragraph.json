@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sections_paragraphs",
+  "info": {
+    "displayName": "Paragraph"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

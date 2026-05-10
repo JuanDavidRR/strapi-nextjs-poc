@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_sections_heroes",
+  "info": {
+    "displayName": "Hero"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "component",
+      "component": "elements.logo",
+      "repeatable": false
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "files",
+        "images"
+      ]
+    },
+    "heading": {
+      "type": "string"
+    },
+    "cta": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "turquoise",
+        "orange"
+      ]
+    }
+  },
+  "config": {}
+}

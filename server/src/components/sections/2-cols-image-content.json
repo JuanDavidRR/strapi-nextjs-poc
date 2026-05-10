@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_sections_2_cols_image_contents",
+  "info": {
+    "displayName": "Info"
+  },
+  "options": {},
+  "attributes": {
+    "reverse": {
+      "type": "boolean",
+      "default": false
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "heading": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "cta": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "turquoise",
+        "orange"
+      ]
+    }
+  },
+  "config": {}
+}

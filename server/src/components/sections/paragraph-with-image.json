@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sections_paragraph_with_images",
+  "info": {
+    "displayName": "Paragraph with image"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "reverse": {
+      "type": "boolean",
+      "default": false
+    },
+    "imageLandscape": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "config": {}
+}

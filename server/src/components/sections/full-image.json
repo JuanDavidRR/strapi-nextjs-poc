@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_full_images",
+  "info": {
+    "displayName": "Full Image"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "files",
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}
