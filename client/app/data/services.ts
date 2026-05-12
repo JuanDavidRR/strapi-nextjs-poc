@@ -1,4 +1,15 @@
-const BASE_URL = process.env.PUBLIC_API_URL ?? "http://localhost:1337";
+const BASE_URL = process.env.STRAPI_API_URL ?? "http://localhost:1337";
+const API_TOKEN = process.env.STRAPI_API_TOKEN;
+
+export interface EventsSubscribeProps {
+  firstName: string;
+  lastName: string;
+  email: string;
+  telephone: string;
+  event: {
+    connect: [string];
+  };
+}
 
 export async function subscribeService(email: string) {
   const url = new URL("/api/newsletter-signups", BASE_URL);
@@ -8,38 +19,15 @@ export async function subscribeService(email: string) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        Authorization: `Bearer ${API_TOKEN}`,
       },
-      body: JSON.stringify({
-        data: {
-          email,
-        },
-      }),
+      body: JSON.stringify({ data: { email } }),
     });
 
     return response.json();
   } catch (error) {
     console.error("Subscribe Service Error:", error);
   }
-}
-
-export interface EventsSubscribeProps {
-  firstName: string;
-  lastName: string;
-  email: string;
-  telephone: string;
-  event: {
-    connect: [string];
-  };
-}
-
-export interface EventsSubscribeProps {
-  firstName: string;
-  lastName: string;
-  email: string;
-  telephone: string;
-  event: {
-    connect: [string];
-  };
 }
 
 export async function eventsSubscribeService(data: EventsSubscribeProps) {
@@ -50,6 +38,7 @@ export async function eventsSubscribeService(data: EventsSubscribeProps) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        Authorization: `Bearer ${API_TOKEN}`,
       },
       body: JSON.stringify({ data: { ...data } }),
     });
