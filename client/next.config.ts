@@ -15,6 +15,11 @@ const nextConfig: NextConfig = {
         port: "1337",
         pathname: "/uploads/**",
       },
+      {
+        protocol: "https",
+        hostname: "tremendous-fireworks-24ed390d9d.media.strapiapp.com",
+        pathname: "/**",
+      },
     ],
   },
 };

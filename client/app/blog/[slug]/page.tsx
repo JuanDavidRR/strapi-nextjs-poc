@@ -124,7 +124,7 @@ export default async function SingleBlogRoute({ params }: PageProps) {
           localizations={article.localizations || []}
           basePath="blog"
         />
-        <div className="flex justify-between pt-10 pb-20">
+        <div className="flex flex-col-reverse md:flex-row justify-between pt-10 pb-20">
           <div className="flex-3">
             <ArticleOverview
               description={description}
@@ -132,7 +132,7 @@ export default async function SingleBlogRoute({ params }: PageProps) {
             />
           </div>
           {tableOfContents && (
-            <ul className="flex-2 flex flex-col gap-3 justify-start items-end">
+            <ul className="flex-2 flex flex-col gap-3 justify-start md:items-end mb-10">
               {tableOfContents.map(
                 (item: { heading: string; linkId?: string }, index: number) => (
                   <li key={index}>

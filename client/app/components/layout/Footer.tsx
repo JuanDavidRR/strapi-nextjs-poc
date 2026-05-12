@@ -40,7 +40,7 @@ export function Footer({ data }: FooterProps) {
           </ul>
         </nav>
         <div className="flex flex-col md:flex-row justify-between w-full">
-          <ul className="flex flex-col md:flex-row gap-6">
+          <ul className="flex flex-col md:flex-row gap-6 text-center md:text-left">
             {policies.map((item) => (
               <li key={item.id}>
                 <Link
@@ -53,7 +53,7 @@ export function Footer({ data }: FooterProps) {
               </li>
             ))}
           </ul>
-          <p className="copy">
+          <p className="copy mt-10 md:mt-0 text-center md:text-right">
             &copy; {new Date().getFullYear()} {copy}
           </p>
         </div>
