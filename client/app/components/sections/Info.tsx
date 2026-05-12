@@ -22,7 +22,7 @@ export function Info({
 
   return (
     <section
-      className={`grid grid-cols-1 md:grid-cols-2 w-full gap-10 info--${theme} my-20`}
+      className={`grid grid-cols-1 lg:grid-cols-2 w-full gap-10 info--${theme} my-20`}
     >
       {/* Image Side: No padding, forced to boundaries */}
       <div className={`w-full h-full ${reverse ? "md:order-2" : "md:order-1"}`}>

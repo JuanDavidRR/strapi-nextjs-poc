@@ -6,12 +6,11 @@ export function ParagraphWithImage({
   content,
   image,
   reversed,
-  imageLandscape,
 }: Readonly<ParagraphWithImageProps>) {
   return (
     <div
       className={`flex flex-col py-8 ${
-        reversed ? "md:flex-row-reverse" : "md:flex-row"
+        reversed ? "lg:flex-row-reverse" : "lg:flex-row"
       } gap-8 items-start`}
     >
       <div className="flex-6 space-y-6">

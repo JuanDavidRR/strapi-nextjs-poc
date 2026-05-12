@@ -35,7 +35,7 @@ export function Hero({
       </div>
 
       <div className="max-w-7xl flex flex-col gap-8 md:gap-16 px-10 z-10 md:pl-20">
-        <h1 className="text-5xl md:w-1/2 md:text-7xl leading-tight tracking-tight md:w-[60%] text-white">
+        <h1 className="text-5xl md:w-1/2 md:text-7xl leading-tight tracking-tight text-white">
           {heading}
         </h1>
 

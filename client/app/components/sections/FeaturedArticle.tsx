@@ -10,7 +10,7 @@ export function FeaturedArticle({
   image,
 }: Readonly<FeaturedArticleProps>) {
   return (
-    <article className="flex flex-col md:flex-row max-w-7xl mx-auto gap-10 items-center my-20">
+    <article className="flex flex-col lg:flex-row max-w-7xl mx-auto gap-10 items-center my-20">
       <div className="flex-1 flex flex-col gap-4">
         <h3 className="text-4xl md:text-5xl">{headline}</h3>
         <div className="copy">
